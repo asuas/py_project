@@ -5,11 +5,11 @@
 
 version: 2
 updates:
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "11:30"
-  ignore: 
-    - dependency-name: "*"
-      update-types: ["version-update:semver-major"]
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "11:30"
+    ignore: 
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
